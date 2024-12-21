@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         .hero {
-            background-image:url('images/hero1.jpg');
+            background-image: url('images/hero1.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -20,60 +22,71 @@
             padding: 50px 20px;
             text-align: center;
         }
-        .hero h1{
+
+        .hero h1 {
             font-weight: bold;
         }
-        .hero p{
+
+        .hero p {
             font-style: italic;
         }
-       
-        .navbar{
+
+        .navbar {
             background-color: rgb(2, 66, 2);
         }
+
         .section {
             padding: 40px 15px;
         }
-        .AirPic{
+
+        .AirPic {
             width: 612px;
-            margin-right:15px;
-            height:344px;
+            margin-right: 10px;
+            height: 344px;
             border-radius: 15px;
             box-shadow: rgba(44, 125, 4, 0.4) 5px 5px, rgba(44, 125, 4, 0.4) 10px 10px, rgba(44, 125, 4, 0.4) 15px 15px, rgba(44, 125, 4, 0.4) 20px 20px;
         }
-        .soilPic{
-            margin-right:15px;
+
+        .soilPic {
+            margin-right: 10px;
             width: 612px;
             height: 344px;
             border-radius: 15px;
-                      box-shadow: rgba(44, 125, 4, 0.4) 5px 5px, rgba(44, 125, 4, 0.4) 10px 10px, rgba(44, 125, 4, 0.4) 15px 15px, rgba(44, 125, 4, 0.4) 20px 20px;
+            box-shadow: rgba(44, 125, 4, 0.4) 5px 5px, rgba(44, 125, 4, 0.4) 10px 10px, rgba(44, 125, 4, 0.4) 15px 15px, rgba(44, 125, 4, 0.4) 20px 20px;
 
         }
-        .resPic{
-            margin-right:15px;
+
+        .resPic {
+            margin-right: 10px;
             border-radius: 15px;
-                      box-shadow: rgba(44, 125, 4, 0.4) 5px 5px, rgba(44, 125, 4, 0.4) 10px 10px, rgba(44, 125, 4, 0.4) 15px 15px, rgba(44, 125, 4, 0.4) 20px 20px;
+            box-shadow: rgba(44, 125, 4, 0.4) 5px 5px, rgba(44, 125, 4, 0.4) 10px 10px, rgba(44, 125, 4, 0.4) 15px 15px, rgba(44, 125, 4, 0.4) 20px 20px;
 
             width: 612px;
-            height:344px;
+            height: 344px;
         }
-      
+
         .bg-light-gray {
             background-color: #f9f9f9;
         }
+
         .footer {
-            background:rgb(2, 66, 2);;
+            background: rgb(2, 66, 2);
+            ;
             color: white;
             padding: 12px 0;
             text-align: center;
         }
+
         .video-container {
             position: relative;
             overflow: hidden;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         .video-container video {
             position: absolute;
             top: 0;
@@ -84,151 +97,209 @@
             border: 3px solid rgb(2, 66, 2);
             border-radius: 15px;
         }
+        
     </style>
 </head>
+
 <body>
 
-<header class="hero">
-    <h1 data-en="SISE Environmental Safety Solutions and Innovations" data-ar="حلول وابتكارات السلامة البيئية SISE">SISE Environmental Safety Solutions and Innovations</h1>
-    <p data-en="Comprehensive solutions and innovations for a sustainable planet." data-ar="حلول وابتكارات شاملة لكوكب مستدام.">Comprehensive solutions and innovations for a sustainable planet.</p>
-   
-</header>
+    <header class="hero">
+        <h1 data-en="SISE Environmental Safety Solutions and Innovations" data-ar="حلول وابتكارات السلامة البيئية SISE">
+            SISE Environmental Safety Solutions and Innovations</h1>
+        <p data-en="Comprehensive solutions and innovations for a sustainable planet."
+            data-ar="حلول وابتكارات شاملة لكوكب مستدام.">Comprehensive solutions and innovations for a sustainable
+            planet.</p>
 
-<nav class="navbar navbar-expand-lg navbar-dark ">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#" data-en="SISE" data-ar="SISE">SISE</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#resources" data-en="Sustainability" data-ar="الاستدامة">Sustainability</a></li>
-                <li class="nav-item"><a class="nav-link" href="#water" data-en="Water Protection" data-ar="حماية المياه">Water Protection</a></li>
-                <li class="nav-item"><a class="nav-link" href="#air" data-en="Air Protection" data-ar="حماية الهواء">Air Protection</a></li>
-                <li class="nav-item"><a class="nav-link" href="#soil" data-en="Soil Protection" data-ar="حماية التربة">Soil Protection</a></li>
-                <li class="nav-item"><a class="nav-link" href="#human-activities" data-en="Human Activities" data-ar="الأنشطة البشرية">Human Activities</a></li>
-            </ul>
-        </div>
-    </div>
-    <select id="languageSwitcher" class="form-select m-2" style="width: 200px;">
-        <option value="en">English</option>
-        <option value="ar">العربية</option>
-    </select>
-</nav>
+    </header>
 
-<main>
-    <!-- Sustainability Section -->
-    <section id="resources" class="section">
-        <div class="container">
-            <h2 data-en="Preserving Natural Resources" data-ar="الحفاظ على الموارد الطبيعية">Preserving Natural Resources</h2>
-            <p data-en="Preserving the sustainability of renewable and non-renewable resources is crucial for future generations. SISE focuses on educating people about the responsible usage of resources like water, energy, and minerals." data-ar="الحفاظ على استدامة الموارد المتجددة وغير المتجددة أمر بالغ الأهمية للأجيال القادمة. تركز SISE على تثقيف الناس حول الاستخدام المسؤول للموارد مثل المياه والطاقة والمعادن.">
-                Preserving the sustainability of renewable and non-renewable resources is crucial for future generations. 
-                SISE focuses on educating people about the responsible usage of resources like water, energy, and minerals.
-            </p>
-            <img src="images/pic1.jpg" alt="Natural Resources" class="img-fluid my-4 resPic">
-            <ul class="m-3">
-                <li data-en="Reduce consumption of non-renewable resources like fossil fuels." data-ar="تقليل استهلاك الموارد غير المتجددة مثل الوقود الأحفوري.">Reduce consumption of non-renewable resources like fossil fuels.</li>
-                <li data-en="Encourage renewable energy sources like solar and wind." data-ar="تشجيع مصادر الطاقة المتجددة مثل الطاقة الشمسية والرياح.">Encourage renewable energy sources like solar and wind.</li>
-                <li data-en="Promote resource recycling and reuse." data-ar="تشجيع إعادة تدوير الموارد وإعادة استخدامها.">Promote resource recycling and reuse.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Water Protection Section -->
-    <section id="water" class="section bg-light-gray">
-        <div class="container">
-            <h2 data-en="Protecting Water Resources" data-ar="حماية الموارد المائية">Protecting Water Resources</h2>
-            <p data-en="River and sea water pollution due to plastic and chemicals is a growing concern. SISE provides insights on minimizing water contamination and protecting aquatic ecosystems." data-ar="تلوث مياه الأنهار والبحار بسبب البلاستيك والمواد الكيميائية هو مصدر قلق متزايد. تقدم SISE رؤى حول تقليل تلوث المياه وحماية النظم البيئية المائية.">
-                River and sea water pollution due to plastic and chemicals is a growing concern. SISE provides insights 
-                on minimizing water contamination and protecting aquatic ecosystems.
-            </p>
-            <div class="video-container">
-                <video  controls autoplay loop>
-                    <source src="images/water.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" data-en="SISE" data-ar="SISE">SISE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#resources" data-en="Sustainability"
+                            data-ar="الاستدامة">Sustainability</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#water" data-en="Water Protection"
+                            data-ar="حماية المياه">Water Protection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#air" data-en="Air Protection"
+                            data-ar="حماية الهواء">Air Protection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#soil" data-en="Soil Protection"
+                            data-ar="حماية التربة">Soil Protection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#human-activities" data-en="Human Activities"
+                            data-ar="الأنشطة البشرية">Human Activities</a></li>
+                </ul>
             </div>
-            <ul class="m-3">
-                <li data-en="Encourage plastic-free zones and proper waste management." data-ar="تشجيع المناطق الخالية من البلاستيك والإدارة السليمة للنفايات.">Encourage plastic-free zones and proper waste management.</li>
-                <li data-en="Promote the use of biodegradable products." data-ar="تشجيع استخدام المنتجات القابلة للتحلل الحيوي.">Promote the use of biodegradable products.</li>
-                <li data-en="Highlight the dangers of industrial and chemical pollution in water bodies." data-ar="تسليط الضوء على مخاطر التلوث الصناعي والكيميائي في المسطحات المائية.">Highlight the dangers of industrial and chemical pollution in water bodies.</li>
-            </ul>
         </div>
-    </section>
+        <select id="languageSwitcher" class="form-select m-2" style="width: 200px;">
+            <option value="en">English</option>
+            <option value="ar">العربية</option>
+        </select>
+    </nav>
 
-    <!-- Air Protection Section -->
-    <section id="air" class="section">
-        <div class="container">
-            <h2 data-en="Protecting Air Quality" data-ar="حماية جودة الهواء">Protecting Air Quality</h2>
-            <p data-en="Air pollution caused by industries and fires contributes to health issues and climate change. SISE aims to reduce carbon dioxide emissions and other pollutants." data-ar="يساهم تلوث الهواء الناجم عن الصناعات والحرائق في مشاكل صحية وتغير المناخ. تهدف SISE إلى تقليل انبعاثات ثاني أكسيد الكربون والملوثات الأخرى.">
-                Air pollution caused by industries and fires contributes to health issues and climate change. SISE aims to
-                reduce carbon dioxide emissions and other pollutants.
-            </p>
-            <img src="images/air.jpeg" alt="Air Quality" class="img-fluid my-4 AirPic">
-            <ul class="m-3">
-                <li data-en="Promote energy-efficient technologies." data-ar="تشجيع التقنيات الموفرة للطاقة.">Promote energy-efficient technologies.</li>
-                <li data-en="Encourage afforestation and urban green spaces." data-ar="تشجيع التشجير والمساحات الخضراء الحضرية.">Encourage afforestation and urban green spaces.</li>
-                <li data-en="Raise awareness about the dangers of industrial emissions." data-ar="زيادة الوعي بمخاطر الانبعاثات الصناعية.">Raise awareness about the dangers of industrial emissions.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Soil Protection Section -->
-    <section id="soil" class="section bg-light-gray">
-        <div class="container">
-            <h2 data-en="Protecting Soil Health" data-ar="حماية صحة التربة">Protecting Soil Health</h2>
-            <p data-en="Soil pollution from plastic waste and harmful chemicals threatens agriculture and biodiversity. SISE works on spreading knowledge about sustainable farming and waste management." data-ar="تلوث التربة من النفايات البلاستيكية والمواد الكيميائية الضارة يهدد الزراعة والتنوع البيولوجي. تعمل SISE على نشر المعرفة حول الزراعة المستدامة وإدارة النفايات.">
-                Soil pollution from plastic waste and harmful chemicals threatens agriculture and biodiversity. 
-                SISE works on spreading knowledge about sustainable farming and waste management.
-            </p>
-            <img src="images/soilP.jpg" alt="Soil Health" class="img-fluid my-4 soilPic">
-            <ul class="m-3">
-                <li data-en="Avoid the overuse of chemical fertilizers and pesticides." data-ar="تجنب الإفراط في استخدام الأسمدة الكيميائية والمبيدات الحشرية.">Avoid the overuse of chemical fertilizers and pesticides.</li>
-                <li data-en="Support organic farming methods." data-ar="دعم طرق الزراعة العضوية.">Support organic farming methods.</li>
-                <li data-en="Encourage composting and waste segregation." data-ar="تشجيع التسميد وفصل النفايات.">Encourage composting and waste segregation.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Human Activities Section -->
-    <section id="human-activities" class="section">
-        <div class="container">
-            <h2 data-en="Reducing Risks from Human Activities" data-ar="تقليل المخاطر من الأنشطة البشرية">Reducing Risks from Human Activities</h2>
-            <p data-en="Daily human activities have a significant impact on the environment. SISE advocates for safer and environmentally friendly practices in homes and industries." data-ar="الأنشطة البشرية اليومية لها تأثير كبير على البيئة. تدعو SISE إلى ممارسات أكثر أمانًا وصديقة للبيئة في المنازل والصناعات.">
-                Daily human activities have a significant impact on the environment. SISE advocates for safer and 
-                environmentally friendly practices in homes and industries.
-            </p>
-            <div class="video-container">
-                <video controls autoplay loop>
-                    <source src="images/planet.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+    <main>
+        <!-- Sustainability Section -->
+        <section id="resources" class="section">
+            <div class="container">
+                <h2 data-en="Preserving Natural Resources" data-ar="الحفاظ على الموارد الطبيعية">Preserving Natural
+                    Resources</h2>
+                <p data-en="Preserving the sustainability of renewable and non-renewable resources is crucial for future generations. SISE focuses on educating people about the responsible usage of resources like water, energy, and minerals."
+                    data-ar="الحفاظ على استدامة الموارد المتجددة وغير المتجددة أمر بالغ الأهمية للأجيال القادمة. تركز SISE على تثقيف الناس حول الاستخدام المسؤول للموارد مثل المياه والطاقة والمعادن.">
+                    Preserving the sustainability of renewable and non-renewable resources is crucial for future
+                    generations.
+                    SISE focuses on educating people about the responsible usage of resources like water, energy, and
+                    minerals.
+                </p>
+                <img src="images/pic1.jpg" alt="Natural Resources" class="img-fluid my-4 resPic">
+                <ul class="m-3">
+                    <li data-en="Reduce consumption of non-renewable resources like fossil fuels."
+                        data-ar="تقليل استهلاك الموارد غير المتجددة مثل الوقود الأحفوري.">Reduce consumption of
+                        non-renewable resources like fossil fuels.</li>
+                    <li data-en="Encourage renewable energy sources like solar and wind."
+                        data-ar="تشجيع مصادر الطاقة المتجددة مثل الطاقة الشمسية والرياح.">Encourage renewable energy
+                        sources like solar and wind.</li>
+                    <li data-en="Promote resource recycling and reuse."
+                        data-ar="تشجيع إعادة تدوير الموارد وإعادة استخدامها.">Promote resource recycling and reuse.</li>
+                </ul>
             </div>
-            <ul >
-                <li data-en="Adopt energy-saving habits like switching off unused devices." data-ar="اعتماد عادات توفير الطاقة مثل إيقاف تشغيل الأجهزة غير المستخدمة.">Adopt energy-saving habits like switching off unused devices.</li>
-                <li data-en="Use eco-friendly products and avoid single-use plastics." data-ar="استخدام المنتجات الصديقة للبيئة وتجنب البلاستيك المستخدم لمرة واحدة.">Use eco-friendly products and avoid single-use plastics.</li>
-                <li data-en="Implement safety measures in industrial practices." data-ar="تنفيذ تدابير السلامة في الممارسات الصناعية.">Implement safety measures in industrial practices.</li>
-            </ul>
-        </div>
-    </section>
-</main>
+        </section>
 
-<footer class="footer">
-    <p data-en="&copy; 2024 SISE Environmental Safety Solutions and Innovations. All Rights Reserved." data-ar="&copy; 2024 حلول وابتكارات السلامة البيئية SISE. جميع الحقوق محفوظة.">&copy; 2024 SISE Environmental Safety Solutions and Innovations. All Rights Reserved.</p>
-   
-         <p> 0679-670194<i class="fab fa-whatsapp text-success m-2" ></i></p>
+        <!-- Water Protection Section -->
+        <section id="water" class="section bg-light-gray">
+            <div class="container">
+                <h2 data-en="Protecting Water Resources" data-ar="حماية الموارد المائية">Protecting Water Resources</h2>
+                <p data-en="River and sea water pollution due to plastic and chemicals is a growing concern. SISE provides insights on minimizing water contamination and protecting aquatic ecosystems."
+                    data-ar="تلوث مياه الأنهار والبحار بسبب البلاستيك والمواد الكيميائية هو مصدر قلق متزايد. تقدم SISE رؤى حول تقليل تلوث المياه وحماية النظم البيئية المائية.">
+                    River and sea water pollution due to plastic and chemicals is a growing concern. SISE provides
+                    insights
+                    on minimizing water contamination and protecting aquatic ecosystems.
+                </p>
+                <div class="video-container">
+                    <video controls autoplay loop>
+                        <source src="images/water.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <ul class="m-3">
+                    <li data-en="Encourage plastic-free zones and proper waste management."
+                        data-ar="تشجيع المناطق الخالية من البلاستيك والإدارة السليمة للنفايات.">Encourage plastic-free
+                        zones and proper waste management.</li>
+                    <li data-en="Promote the use of biodegradable products."
+                        data-ar="تشجيع استخدام المنتجات القابلة للتحلل الحيوي.">Promote the use of biodegradable
+                        products.</li>
+                    <li data-en="Highlight the dangers of industrial and chemical pollution in water bodies."
+                        data-ar="تسليط الضوء على مخاطر التلوث الصناعي والكيميائي في المسطحات المائية.">Highlight the
+                        dangers of industrial and chemical pollution in water bodies.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Air Protection Section -->
+        <section id="air" class="section">
+            <div class="container">
+                <h2 data-en="Protecting Air Quality" data-ar="حماية جودة الهواء">Protecting Air Quality</h2>
+                <p data-en="Air pollution caused by industries and fires contributes to health issues and climate change. SISE aims to reduce carbon dioxide emissions and other pollutants."
+                    data-ar="يساهم تلوث الهواء الناجم عن الصناعات والحرائق في مشاكل صحية وتغير المناخ. تهدف SISE إلى تقليل انبعاثات ثاني أكسيد الكربون والملوثات الأخرى.">
+                    Air pollution caused by industries and fires contributes to health issues and climate change. SISE
+                    aims to
+                    reduce carbon dioxide emissions and other pollutants.
+                </p>
+                <img src="images/air.jpeg" alt="Air Quality" class="img-fluid my-4 AirPic">
+                <ul class="m-3">
+                    <li data-en="Promote energy-efficient technologies." data-ar="تشجيع التقنيات الموفرة للطاقة.">
+                        Promote energy-efficient technologies.</li>
+                    <li data-en="Encourage afforestation and urban green spaces."
+                        data-ar="تشجيع التشجير والمساحات الخضراء الحضرية.">Encourage afforestation and urban green
+                        spaces.</li>
+                    <li data-en="Raise awareness about the dangers of industrial emissions."
+                        data-ar="زيادة الوعي بمخاطر الانبعاثات الصناعية.">Raise awareness about the dangers of
+                        industrial emissions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Soil Protection Section -->
+        <section id="soil" class="section bg-light-gray">
+            <div class="container">
+                <h2 data-en="Protecting Soil Health" data-ar="حماية صحة التربة">Protecting Soil Health</h2>
+                <p data-en="Soil pollution from plastic waste and harmful chemicals threatens agriculture and biodiversity. SISE works on spreading knowledge about sustainable farming and waste management."
+                    data-ar="تلوث التربة من النفايات البلاستيكية والمواد الكيميائية الضارة يهدد الزراعة والتنوع البيولوجي. تعمل SISE على نش�� المعرفة حول الزراعة المستدامة وإدارة النفايات.">
+                    Soil pollution from plastic waste and harmful chemicals threatens agriculture and biodiversity.
+                    SISE works on spreading knowledge about sustainable farming and waste management.
+                </p>
+                <img src="images/soilP.jpg" alt="Soil Health" class="img-fluid my-4 soilPic">
+                <ul class="m-3">
+                    <li data-en="Avoid the overuse of chemical fertilizers and pesticides."
+                        data-ar="تجنب الإفراط في استخدام الأسمدة الكيميائية والمبيدات الحشرية.">Avoid the overuse of
+                        chemical fertilizers and pesticides.</li>
+                    <li data-en="Support organic farming methods." data-ar="دعم طرق الزراعة العضوية.">Support organic
+                        farming methods.</li>
+                    <li data-en="Encourage composting and waste segregation." data-ar="تشجيع التسميد وفصل النفايات.">
+                        Encourage composting and waste segregation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Human Activities Section -->
+        <section id="human-activities" class="section">
+            <div class="container">
+                <h2 data-en="Reducing Risks from Human Activities" data-ar="تقليل المخاطر من الأنشطة البشرية">Reducing
+                    Risks from Human Activities</h2>
+                <p data-en="Daily human activities have a significant impact on the environment. SISE advocates for safer and environmentally friendly practices in homes and industries."
+                    data-ar="الأنشطة البشرية اليومية لها تأثير كبير على البيئة. تدعو SISE إلى ممارسات أكثر أمانًا وصديقة للبيئة في المنازل والصناعات.">
+                    Daily human activities have a significant impact on the environment. SISE advocates for safer and
+                    environmentally friendly practices in homes and industries.
+                </p>
+                <div class="video-container">
+                    <video controls autoplay loop>
+                        <source src="images/planet.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <ul>
+                    <li data-en="Adopt energy-saving habits like switching off unused devices."
+                        data-ar="اعتماد عادات توفير الطاقة مثل إيقاف تشغيل الأجهزة غير المستخدمة.">Adopt energy-saving
+                        habits like switching off unused devices.</li>
+                    <li data-en="Use eco-friendly products and avoid single-use plastics."
+                        data-ar="استخدام المنتجات الصديقة للبيئة وتجنب البلاستيك المستخدم لمرة واحدة.">Use eco-friendly
+                        products and avoid single-use plastics.</li>
+                    <li data-en="Implement safety measures in industrial practices."
+                        data-ar="تنفيذ تدابير السلامة في الممارسات الصناعية.">Implement safety measures in industrial
+                        practices.</li>
+                </ul>
+                
+       <h1 data-en="Together for a Greener Tomorrow" data-ar="معًا من أجل غدٍ أكثر خضرة">Together for a Greener Tomorrow</h1>
+       <p data-en="Remember, small actions lead to big changes. By conserving the environment, we are not just protecting nature but safeguarding our future and the planet we call home. Together, we can make a difference. 🌍"
+          data-ar="تذكر، أن الأفعال الصغيرة تؤدي إلى تغييرات كبيرة. من خلال الحفاظ على البيئة، نحن لا نحمي الطبيعة فحسب، بل نحمي مستقبلنا والكوكب الذي نسميه وطنًا. معًا، يمكننا إحداث فرق. 🌍">
+          Remember, small actions lead to big changes. By conserving the environment, we are not just protecting nature but safeguarding our future and the planet we call home. Together, we can make a difference. 🌍
+       </p>
+        <div class="video-container">
+            <video controls autoplay loop>
+                <source src="images/save.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p data-en="&copy; 2024 SISE Environmental Safety Solutions and Innovations. All Rights Reserved."
+            data-ar="&copy; 2024 حلول وابتكارات السلامة البيئية SISE. جميع الحقوق محفوظة.">&copy; 2024 SISE
+            Environmental Safety Solutions and Innovations. All Rights Reserved.</p>
+
+        <p> 0679-670194<i class="fab fa-whatsapp text-success m-2"></i></p>
         <a href="mailto:SISEinfo@gmail.com" class="text-white" style="margin-right: 15px; text-decoration: none;">
-          <p>SISEinfo@gmail.com   <i class="fas fa-envelope text-danger " ></i> </p>   
+            <p>SISEinfo@gmail.com <i class="fas fa-envelope text-danger "></i> </p>
         </a>
-       
-           
-    
-       
-    </div>
-</footer>
+        </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
